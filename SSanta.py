@@ -28,9 +28,9 @@ print("\nTotal number of people participating: " + str(nameCount) + "\n")
 #     Everyone gets only one gift
 #     The giver can't gift himself
 #     The giver won't receive a gift from the person he gifted.
-for i in range(1, nameCount):
-    if i == nameCount - 1: (x, y) = (names[i], names[0])
-    else: (x, y) = (names[i - 1]), (names[i])
+for i in range(0, nameCount):
+    if i == nameCount-1: (x, y) = (names[i], names[0])
+    else: (x, y) = (names[i], names[i+1])
     secretSanta.append((x, y))
 
 # Just a shuffle to make the results seem randomly arranged :P No need for this line though!
@@ -41,7 +41,3 @@ for item in secretSanta:
     x, y = item
     print(x + " will gift " + y)
 
-# To verify that all names are getting gifted, here's a count. 
-# This count will always be 1 less than the number of people.
-# With the provided example, for 30 people, the count will be 30 - 1 = 29.
-print("\nCount: " + str(len(secretSanta)))
