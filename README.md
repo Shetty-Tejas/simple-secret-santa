@@ -12,3 +12,4 @@ This script will read all the names inside the text file, run it through a rando
   2. The giver can't gift himself
   3. The giver won't receive a gift from the person he gifted.
 
+P.S: As of now, all this script does is to pair up two people at random. However, thanks to the abilities of Python, it can be expanded to automatically email or message the secret santas with their recipient info, and so on.
